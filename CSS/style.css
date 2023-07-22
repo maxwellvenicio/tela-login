@@ -1,0 +1,149 @@
+body,
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #13131d;
+  color: #f3f3f3;
+  font-family: "Raleway", sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+.content {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-esquerda {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #b019f7;
+  text-align: center;
+}
+
+.login-imagem {
+  width: 100%;
+  display: block;
+}
+
+.login-direita {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  background-color: #b119f718;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px #10001831;
+}
+
+.login-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #b019f7;
+  align-items: center;
+}
+
+.login-fomr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-fomr label {
+  width: 100%;
+  font-size: 0.85rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-fomr input {
+  width: 100%;
+  padding: 10px 16px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  border: none;
+  outline: none; /*PARA REMOVER A BORDA AO CLICAR NO INPUT*/
+  box-sizing: border-box;
+  box-shadow: 0px 5px 20px #10001831;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 13px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #13131d;
+  background-color: #b019f7;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0px 5px 20px #10001831;
+}
+
+.btn-login:hover {
+  background-color: #7a13ac;
+}
+
+@media (max-width: 640px) {
+  .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-esquerda {
+    width: 100%;
+    height: auto;
+  }
+  .login-direita {
+    width: 100%;
+    height: auto;
+  }
+  .login-imagem {
+    width: 70%;
+  }
+  .login-titulo {
+    display: none;
+  }
+}
