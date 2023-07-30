@@ -104,7 +104,7 @@ body * {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   border: none;
-  outline: none; /*PARA REMOVER A BORDA AO CLICAR NO INPUT*/
+  outline: none; /*remover borda inupt*/
   box-sizing: border-box;
   box-shadow: 0px 5px 20px #10001831;
 }
